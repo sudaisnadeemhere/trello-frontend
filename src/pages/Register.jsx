@@ -22,7 +22,7 @@ export default function Register() {
     setError('');
     setLoading(true);
     try {
-      const data = await apiRequest('/auth/register', 'POST', { name, email, password });
+      const data = await apiRequest('/api/auth/register', 'POST', { name, email, password });
       if (data && data.token && data.user) {
         login(data);
         setTimeout(() => navigate('/board', { replace: true }), 100);
