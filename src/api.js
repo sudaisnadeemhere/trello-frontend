@@ -1,4 +1,4 @@
-const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? 'http://localhost:5000/api' : '/api';
+const API_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? 'https://trello-backend-five.vercel.app/' : '/api';
 
 export const apiRequest = async (path, method = 'GET', body, token) => {
   const headers = { 'Content-Type': 'application/json' };
