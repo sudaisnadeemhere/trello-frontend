@@ -578,7 +578,7 @@ button.secondary:hover,
   margin-top: 8px;
 }
 
-..btn-primary:hover:not(:disabled) {
+.btn-primary:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(139, 92, 246, 0.35);
 }
